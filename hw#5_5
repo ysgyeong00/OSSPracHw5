@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	string name;
+	int stdnum;
+	string major;
+
+	cout << "이름을 입력하세요 : ";
+	cin >> name;
+	cout << "학번을 입력하세요 : ";
+	cin >> stdnum;
+	cout << "학과를 입력하세요 : ";
+	cin >> major;
+
+	cout << "\n<출력>\n" << "이름 : ";
+	for (int i = 0; i < 6; i++) {
+		cout << name[i];
+	}
+	cout << "\n학번 : " << stdnum << "\n";
+	cout << "학과 : ";
+	for (int i = 0; i < size(major); i++) {
+		cout << major[i];
+	}
+	cout << "\n";
+
+	return 0;
+}

@@ -17,6 +17,7 @@ int main() {
 	string name;
 	int stdnum;
 	string major;
+	string univ;
 	int grade;
 
 	cout << "이름을 입력하세요 : ";
@@ -25,6 +26,8 @@ int main() {
 	cin >> stdnum;
 	cout << "학과를 입력하세요 : ";
 	cin >> major;
+	cout << "학교를 입력하세요 : ";
+	cin >> univ;
 	cout << "학년를 입력하세요 : ";
 	cin >> grade;
 
@@ -32,6 +35,8 @@ int main() {
 	Name.korean = name;
 	PrintKorean Major;
 	Major.korean = major;
+	PrintKorean Univ;
+	Univ.korean = univ;
 
 	cout << "\n<출력>";
 	cout << "\n이름 : ";
@@ -39,6 +44,8 @@ int main() {
 	cout << "\n학번 : " << stdnum;
 	cout << "\n학과 : ";
 	Major.PK();
+	cout << "\n학교 : ";
+	Univ.PK();
 	cout << "\n학년 : " << grade;
 	cout << "\n";
 
